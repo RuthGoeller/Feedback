@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Header(props) {
+function Header() {
   return (
     <div>
-        <h1>{props.text}</h1>
+        <h1>Feebback UI</h1>
     </div>
       
   )
