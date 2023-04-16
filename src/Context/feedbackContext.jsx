@@ -41,6 +41,10 @@ const [feedbackEdit, setfeedbackEdit] = useState({
       }
     
 
+const updateFeedback = (id, updItem) => {
+    setFeedback(Feedback.map((item) => (item.id === id ? {...item, ...updItem} : item)))
+}
+
       //set item to be updated 
       const editFeedback = (item) => {
         setfeedbackEdit({
@@ -56,6 +60,7 @@ const [feedbackEdit, setfeedbackEdit] = useState({
         addFeedback,
         editFeedback,
         feedbackEdit,
+        updateFeedback,
     }}>
 
         {children}
